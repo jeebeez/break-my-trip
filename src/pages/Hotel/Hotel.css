@@ -1,0 +1,135 @@
+.hotel {
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1.5rem;
+}
+
+.hotel-data {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: var(--smallWidth);
+  max-width: var(--fullWidth);
+  margin: 0 auto;
+  text-align: left;
+}
+
+.linehead {
+  height: 0.1rem;
+  background-color: rgb(232, 232, 232);
+  margin: auto;
+  margin-bottom: 2rem;
+  width: 90%;
+}
+
+.hotel-img {
+  width: 75vh;
+  height: 50vh;
+  border-radius: var(--mainBorderRadius);
+}
+
+.hotel-inf {
+  padding: 0.25rem 0rem;
+  color: var(--mainBlack);
+  font-size: 1.25rem;
+  font-weight: 500;
+  font-style: bold;
+}
+
+.hotel-inf-data {
+  display: flex;
+  flex-flow: column;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 0rem;
+}
+
+.hotel-info {
+  padding-top: 0.5rem;
+}
+
+.hotel-name {
+  margin: 2rem auto;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-style: bold;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating-pill {
+  height: 1.5rem;
+  width: 2.5rem;
+  border-radius: 9999px;
+  color: white;
+  margin: 0rem 0.5rem;
+  background-color: rgba(2, 128, 0, 1);
+}
+
+.hotel-details {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hotel-combined-data {
+  margin: 0rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 1080px) {
+  .hotel-img {
+    width: 55vh;
+    height: 40vh;
+  }
+}
+
+.button-books {
+  display: block;
+  margin: 2rem auto;
+  font-size: 1rem;
+  padding: 0.7rem 1.5rem;
+  background: rgb(5, 155, 0);
+  border: 0;
+  color: white;
+  letter-spacing: 3px;
+  cursor: pointer;
+  font-weight: 700;
+  outline: none;
+  transition: all 0.7s ease;
+  border-radius: 5px;
+}
+
+.button-books:hover {
+  background: rgba(2, 128, 0, 1);
+}
+
+@media screen and (max-width: 720px) {
+  .hotel-combined-data {
+    margin: 0rem 2rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hotel-img {
+    width: 45vh;
+    height: 30vh;
+  }
+}

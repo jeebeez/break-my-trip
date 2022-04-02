@@ -1,0 +1,158 @@
+@font-face {
+  font-family: proxima;
+  src: url("./assets/fonts/FontsFree-Net-proxima_nova_reg-webfont.ttf");
+}
+
+/*
+======
+Variables
+======
+*/
+
+:root {
+  --primaryLightColor: #d4e6a5;
+  --primaryColor: #dbdde1;
+  --primaryDarkColor: #c02c03;
+  --mainWhite: #ffffff;
+  --offWhite: #f7f7f7;
+  --mainBackground: #111;
+  --mainOverlay: rgba(35, 10, 36, 0.4);
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --darkGrey: #afafaf;
+  --mainRed: #bd0303;
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 0.3rem;
+  --lightShadow: 0px 0.4rem 1.8rem rgb(28 28 28 / 12%);
+  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+  --mainBorderRadius: 1.5rem;
+  --smallWidth: 85vw;
+  --maxWidth: 40rem;
+  --fullWidth: 1170px;
+}
+
+/*
+  ======
+  Global Styles
+  ======
+  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: proxima;
+}
+
+body {
+  color: var(--mainBlack);
+  background: #f4f4f4;
+  line-height: 1.4;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--mainBlack);
+}
+
+.section {
+  margin: 0 auto;
+}
+
+.no-search {
+  margin-top: 8rem;
+}
+
+.section-title {
+  font-weight: 1000;
+  font-size: 2rem;
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.app-search {
+  background-color: #f9fafa;
+  margin-top: 6rem;
+  height: 8rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.space-all {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.button-default {
+  font-size: 1rem;
+  padding: 0.7rem 1.5rem;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  outline: none;
+  transition: all 0.7s ease;
+  border-radius: 5px;
+}
+
+.books {
+  background: rgb(5, 155, 0);
+}
+
+.books:hover {
+  background: rgba(2, 128, 0, 1);
+}
+
+.cancels {
+  background: rgb(224, 7, 0);
+}
+
+.cancels:hover {
+  background: rgb(194, 6, 0);
+}
+
+@media screen and (max-width: 600px) {
+  .app-search-bar {
+    display: none;
+  }
+  .app-search-modal {
+    width: 90%;
+    height: 3rem;
+    border-radius: 5px;
+    border-width: 1px;
+    background-color: #007cc2;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .app-search-bar {
+    width: 100%;
+  }
+  .app-search-modal {
+    display: none;
+  }
+}

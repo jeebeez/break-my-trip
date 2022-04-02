@@ -1,0 +1,57 @@
+.card {
+  padding: 10px;
+  background: var(--mainWhite);
+  border-color: rgb(232, 232, 232);
+  box-sizing: border-box;
+  margin: 1px;
+  transition: var(--mainTransition);
+  border-radius: var(--mainBorderRadius);
+}
+
+.card:hover {
+  box-shadow: var(--lightShadow);
+}
+
+.card img {
+  height: 20rem;
+  object-fit: cover;
+  border-radius: var(--mainBorderRadius);
+  width: 100%;
+  display: block;
+}
+
+.card-details {
+  flex: 2;
+  padding: 10px;
+}
+
+.card-name {
+  color: black;
+  margin: 5px 0;
+}
+
+.card-info {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.card-info li {
+  font-size: 14px;
+  color: #0094d0;
+  margin-right: 55px;
+}
+
+.linefoot {
+  height: 0.1rem;
+  background-color: rgb(232, 232, 232);
+  margin-bottom: 0.5rem;
+  margin-top: 0.7rem;
+}
+
+.hotel-info li strong {
+  color: black;
+  display: block;
+  font-size: 15px;
+  margin-top: 2px;
+}
