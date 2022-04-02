@@ -1,0 +1,11 @@
+.space-all-date {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  max-width: 18rem;
+  align-items: center;
+}
+
+.space-all-date > div {
+  max-width: 32% !important;
+}

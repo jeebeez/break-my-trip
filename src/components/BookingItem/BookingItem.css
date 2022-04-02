@@ -1,0 +1,78 @@
+.date-picker {
+  display: flex;
+  gap: 1rem;
+  max-width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date-style {
+  max-width: 100%;
+}
+
+.space-all-date input {
+  margin: 0;
+}
+
+.space-all-bookings {
+  display: flex;
+  gap: 4rem;
+  justify-content: space-between;
+  max-width: 18rem;
+  align-items: center;
+}
+
+/* .react-datepicker__input-container {
+    max-width: 40% !important;
+  } */
+
+.space-all-date > div {
+  max-width: 30% !important;
+}
+
+.card-hotel {
+  max-width: 30%;
+}
+
+.hotel-data-check {
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.hotel-container {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem auto;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.hotel-cart-name {
+  margin: 0.5rem auto !important;
+  font-size: 2rem !important;
+  font-weight: 700;
+  font-style: bold;
+}
+
+.clear-m {
+  margin: 0 !important;
+}
+
+.react-date-picker__inputGroup__input:invalid {
+  background: none;
+  outline: none;
+}
+
+.check-img {
+  height: 15rem;
+  object-fit: cover;
+  border-radius: var(--mainBorderRadius);
+  width: 15%;
+}
+
+.cart-items {
+  margin: 5rem 20rem;
+}
